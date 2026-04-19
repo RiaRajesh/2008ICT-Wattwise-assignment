@@ -24,103 +24,125 @@
 
 	<!-- DESCRIPTION -->
 	<section class="description">
-		<h2>Descriptive Text</h2>
-		<p>Lorem ipsum placeholder text for explanation.</p>
+		<h2>How it works?</h2>
+
+		<p>TThis dashboard provides a comprehensive and easy-to-understand overview of your household energy usage,
+			allowing you to
+			track consumption in real time and over longer periods. It presents key information through simple visual
+			elements such
+			as charts, progress indicators, and summaries, helping you quickly identify patterns and trends in your
+			energy
+			behaviour.<br />
+			The dashboard highlights important details such as expected costs and remaining energy, supporting more
+			informed
+			decision-making.<br />
+			Overall, the platform is designed to simplify complex energy data into clear, actionable insights,
+			empowering users to
+			reduce unnecessary consumption, manage expenses more effectively, and build more sustainable energy habits
+			without
+			feeling overwhelmed. </p>
 	</section>
 
 	<!-- GREETING -->
-<section class="greetings-section">
-
+	<h2 class="greeting">🌤 Good evening, Ria! you're using energy efficiently today!</h2>
+	<!-- Wave generator for layout in order to make the website UI more aesthetic -->
 	<div class="wave-header">
-		<h2>Greetings</h2>
-
-		<svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+		<svg viewBox="0 0 1460 120" preserveAspectRatio="none">
+			<defs>
+				<linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="0%" stop-color="#27e385" /> <!-- Access colors for wave gradient  -->
+					<stop offset="100%" stop-color="#0D5C63" />
+				</linearGradient>
+			</defs>
 			<path d="M0,60 
-               C240,120 480,120 720,60 
-               C960,0 1200,0 1440,60">
-			</path>
+               C120,10 240,110 360,60 
+               C480,10 600,110 720,60 
+               C840,10 960,110 1080,60 
+               C1200,10 1320,110 1460,60" fill="none" stroke="url(#waveGradient)" stroke-width="7"
+				stroke-linecap="round" />
 		</svg>
 	</div>
 
 
-		<!-- DASHBOARD -->
-		<section class="dashboard">
+	<!-- DASHBOARD -->
+	<section class="dashboard">
 
-			<!-- LEFT CARD -->
-			<div class="card">
-				<div class="card-header">
+		<!-- LEFT CARD -->
+		<div class="card">
+			<div class="card-header">
 
-					<span>⚡Energy used: 30Kwh</span>
-					<span>💲Bill expected</span>
-				</div>
+				<span>⚡Energy used: 30Kwh</span>
+				<span>💲Bill expected</span>
+			</div>
 
-				<div class="circle-container">
-					<div class="circle">
-						<div class="circle-text">
-							Today's Usage: <br>
-							30 kWh/ 37.5 kWh <br>
-							80% of limit
-						</div>
+			<div class="circle-container">
+				<div class="circle">
+					<div class="circle-text">
+						Today's Usage: <br>
+						30 kWh/ 37.5 kWh <br>
+						80% of limit
 					</div>
 				</div>
-
-				<div class="card-footer">
-					<span>$$ Bill: $10.50 </span>
-					<span>kWh remaining: 7.5 kWh </span>
-				</div>
 			</div>
 
-
-			<!-- RIGHT CARD -->
-			<div class="card">
-				<h3 class="graph-title">Weekly Energy Usage</h3>
-				<div class="graph-box">
-					<img src="images/graph.png" alt="">
-				</div>
+			<div class="card-footer">
+				<span>$$ Bill: $10.50 </span>
+				<span>kWh remaining: 7.5 kWh </span>
 			</div>
+		</div>
 
-		</section>
 
-		<!-- FEATURES -->
-		<section class="features">
-
-			<div class="feature">
-				<img src="images/appliances.jpg" alt="">
-				<p>Appliances</p>
-				<span>12 kWh</span>
+		<!-- RIGHT CARD - making little boxes in for content -->
+		<div class="card">
+			<h3 class="graph-title">Weekly Energy Usage</h3>
+			<div class="graph-box">
+				<img src="images/graph.png" alt="">
 			</div>
+		</div>
 
-			<div class="feature">
-				<img src="images/light.jpg" alt="">
-				<p>Lights</p>
-				<span>3 kWh</span>
-			</div>
+	</section>
 
-			<div class="feature">
-				<img src="images/AC.png" alt="">
-				<p>AC</p>
-				<span>9 kWh</span>
-			</div>
-			<div class="feature">
-				<img src="images/others.png" alt="">
-				<p>Others</p>
-				<span>6 kWh</span>
-			</div>
+	<!-- FEATURES - adding a bunch of images for feature -->
+
+	<section class="features">
+
+		<div class="feature">
+			<img src="images/appliances.jpg" alt="">
+			<p>Appliances</p>
+			<span>12 kWh</span>
+		</div>
+
+		<div class="feature">
+			<img src="images/light.jpg" alt="">
+			<p>Lights</p>
+			<span>3 kWh</span>
+		</div>
+
+		<div class="feature">
+			<img src="images/AC.png" alt="">
+			<p>AC</p>
+			<span>9 kWh</span>
+		</div>
+		<div class="feature">
+			<img src="images/others.png" alt="">
+			<p>Others</p>
+			<span>6 kWh</span>
+		</div>
 
 
-			<div class="feature">
-				<img src="images/Generated.png" alt="">
-				<p>Generated</p>
-				<span>10 kWh</span>
-			</div>
+		<div class="feature">
+			<img src="images/Generated.png" alt="">
+			<p>Generated</p>
+			<span>10 kWh</span>
+		</div>
 
-			<div class="feature">
-				<img src="images/fromgrid.png" alt="">
-				<p>From Grid</p>
-				<span>20 kWh</span>
-			</div>
+		<div class="feature">
+			<img src="images/fromgrid.png" alt="">
+			<p>From Grid</p>
+			<span>20 kWh</span>
+		</div>
 
-		</section>
+	</section>
 
 </body>
 

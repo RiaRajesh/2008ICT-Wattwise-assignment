@@ -185,7 +185,7 @@ transition: all 0.3s ease;
   align-items: center;
   flex-grow: 1;
 }
-/*progression circle*/
+/*progression circle with animation*/
 
 @property --progress {
   syntax: '<number>';

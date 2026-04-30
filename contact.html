@@ -3,48 +3,127 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Contact</title>
+	<title>Contact Us</title>
 	<link rel="stylesheet" href="style.css">
+
+	<style>
+		.contact-wrapper {
+			padding: 40px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.contact-box {
+			width: 800px;
+			background: #E8F5EE;
+			border: 2px solid #222;
+			padding: 30px;
+		}
+
+		.contact-title {
+			text-align: center;
+			font-size: 32px;
+			margin-bottom: 30px;
+			color: #0D5C63;
+		}
+
+		.contact-content {
+			display: flex;
+			gap: 40px;
+		}
+
+		/* LEFT SIDE FORM */
+		.contact-form {
+			flex: 1;
+		}
+
+		.contact-form label {
+			display: block;
+			margin-top: 15px;
+			font-weight: bold;
+		}
+
+		.contact-form input {
+			width: 100%;
+			border: none;
+			border-bottom: 2px solid #222;
+			background: transparent;
+			padding: 5px;
+		}
+
+		.contact-form button {
+			margin-top: 20px;
+			padding: 10px 20px;
+			border: 2px solid #222;
+			background: white;
+			border-radius: 20px;
+			cursor: pointer;
+		}
+
+		/* RIGHT SIDE INFO */
+		.contact-info {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		.info-box {
+			border: 2px solid #222;
+			padding: 10px;
+			background: white;
+		}
+	</style>
 </head>
 
 <body>
 
+	<!-- NAVBAR -->
 	<nav class="navbar">
 		<div class="logo">LOGO</div>
 		<ul>
 			<li><a href="index.html">Homepage</a></li>
+			<li><a href="#">Insights</a></li>
+			<li><a href="#">How it works</a></li>
+			<li><a href="#">About Us</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
 
-	<section class="description">
-		<h2>Contact Us</h2>
-	</section>
+	<div class="contact-wrapper">
 
-	<section style="padding:40px; display:flex; justify-content:center;">
-		<div class="card" style="max-width:500px; width:100%;">
+		<div class="contact-box">
 
-			<div class="form-group">
-				<label>Name</label>
-				<input type="text">
+			<h2 class="contact-title">Contact Us</h2>
+
+			<div class="contact-content">
+
+				<!-- left side of page -->
+				<div class="contact-form">
+					<label>Full Name</label>
+					<input type="text">
+
+					<label>Email</label>
+					<input type="email">
+
+					<label>Phone Number</label>
+					<input type="text">
+
+					<button>Contact Us</button>
+				</div>
+
+				<!-- on the right side of the page -->
+				<div class="contact-info">
+					<div class="info-box">Building N79 - Engineering, Technology and Aviation</div>
+					<div class="info-box">(07) 3735 7111</div>
+					<div class="info-box">NA04@griffithuni.edu.au</div>
+				</div>
+
 			</div>
-
-			<div class="form-group">
-				<label>Email</label>
-				<input type="email">
-			</div>
-
-			<div class="form-group">
-				<label>Message</label>
-				<textarea style="height:120px;"></textarea>
-			</div>
-
-			<button style="margin-top:10px; padding:10px; background:#1A7A4A; color:white; border:none;">
-				Send Message
-			</button>
 
 		</div>
-	</section>
+
+	</div>
 
 </body>
 

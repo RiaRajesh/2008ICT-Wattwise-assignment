@@ -325,113 +325,206 @@ margin: 20px 0;
   }
 }
 
-/* INSIGHTS PAGE - Brenda Powi*/
+/* INSIGHTS PAGE - Brenda Powi */
+
+/* INSIGHTS HERO SECTION */
+/* This section introduces the page and explains the purpose of the Insights page. */
 
 .insights-hero {
-  background: #f5f5f5;
-  text-align: center;
-  padding: 4em 2em;
+  background: #f5f5f5; /* Light grey background */
+  text-align: center; /* Center align text */
+  padding: 4em 2em; /* Space inside section */
 }
 
 .insights-hero h1 {
-  color: #003b63;
-  font-size: 2.8rem;
-  margin-bottom: 0.4em;
+  color: #003b63; /* Dark blue heading */
+  font-size: 2.8rem; /* Large heading size */
+  margin-bottom: 0.4em; /* Space below heading */
 }
 
 .insights-hero p {
-  color: #333;
+  color: #333; /* Dark grey paragraph text */
   font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.5;
+  max-width: 700px; /* Keeps text readable */
+  margin: 0 auto; /* Centers paragraph */
+  line-height: 1.5; /* Better readability */
 }
 
+
+/* INSIGHTS MAIN SECTION */
+/* This section holds the smart energy tip cards. */
+
 .insights-section {
-  padding: 3em 2.5em;
-  background: #ffffff;
+  padding: 3em 2.5em; /* Space around content */
+  background: #ffffff; /* White background */
 }
 
 .insights-section h2 {
-  text-align: center;
-  color: #0D5C63;
+  text-align: center; /* Center heading */
+  color: #0D5C63; /* Dark teal heading */
   font-size: 2rem;
   margin-bottom: 1.5em;
 }
 
+
+/* GRID LAYOUT FOR CARDS */
+/* Grid layout was used so the cards can be organised clearly in rows and columns. */
+
 .insights-grid {
   display: grid;
+
+  /* Creates 4 equal columns */
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5em;
+
+  gap: 1.5em; /* Space between cards */
 }
 
+
+/* INSIGHT CARD DESIGN */
+/* Each card presents one tip at a time to reduce cognitive load for the user. */
+
 .insight-card {
-  background: #E8F5EE;
-  border: 2px solid #222222;
-  border-radius: 10px;
-  padding: 2em 1.2em;
-  text-align: center;
-  min-height: 260px;
+  background: #E8F5EE; /* Pale sage green card background */
+
+  border: 2px solid #222222; /* Charcoal border */
+
+  border-radius: 10px; /* Rounded corners */
+
+  padding: 2em 1.2em; /* Space inside card */
+
+  text-align: center; /* Center text */
+
+  min-height: 260px; /* Keeps card sizes similar */
+
+  /* Flexbox for centering content inside each card */
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  /* Shadow effect makes cards stand out */
   box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
+
+  /* Smooth hover animation */
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
 }
 
+
+/* CARD HOVER ANIMATION */
+/* Hover effect gives visual feedback when users interact with cards. */
+
 .insight-card:hover {
+
+  /* Moves card slightly upward */
   transform: translateY(-8px);
+
+  /* Darker shadow on hover */
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
+
+/* ICON STYLING + ANIMATION */
+/* Icons make the tips easier to scan quickly. */
+
 .insight-card .icon {
-  font-size: 2.5rem;
-  margin-bottom: 0.5em;
+
+  font-size: 2rem; /* Larger icon size */
+
+  margin-bottom: 0.6em; /* Space below icon */
+
+  /* Smooth icon animation */
+  transition: transform 0.3s ease;
 }
 
+
+/* Icon grows slightly on hover */
+
+.insight-card:hover .icon {
+  transform: scale(1.2);
+}
+
+
+/* CARD TEXT STYLING */
+/* Text styling keeps content simple and readable. */
+
 .insight-card h3 {
-  color: #0D5C63;
+  color: #0D5C63; /* Dark teal heading */
   font-size: 1.25rem;
   margin-bottom: 1em;
 }
 
 .insight-card p {
-  color: #222222;
+  color: #222222; /* Dark text */
   line-height: 1.5;
 }
 
+
+/* WHY THIS MATTERS SECTION */
+/* This section explains how the page connects to the project problem statement. */
+
 .insights-info {
-  background: #E8F5EE;
-  border: 2px solid #222222;
-  max-width: 800px;
-  margin: 1.5em auto 2em;
-  padding: 1.5em;
-  text-align: center;
+
+  background: #E8F5EE; /* Pale sage background */
+
+  border: 2px solid #222222; /* Charcoal border */
+
+  border-radius: 10px; /* Rounded corners */
+
+  max-width: 800px; /* Limits width */
+
+  margin: 1.5em auto 2em; /* Centers section */
+
+  padding: 1.5em; /* Inner spacing */
+
+  text-align: center; /* Center text */
 }
 
 .insights-info h2 {
-  color: #0D5C63;
+  color: #0D5C63; /* Dark teal heading */
   margin-bottom: 0.7em;
 }
 
 .insights-info p {
   line-height: 1.6;
-  color: #222222;
+  color: #222222; /* Dark paragraph text */
 }
 
-/* responsive */
+
+/* RESPONSIVE DESIGN */
+/* Media queries from Workshop 8 are used so the page works on tablet and mobile screens. */
+
+
+/* Tablet */
+
 @media (max-width: 900px) {
+
   .insights-grid {
+
+    /* Changes layout to 2 columns on tablets */
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+
+/* Mobile */
+
 @media (max-width: 600px) {
+
   .insights-grid {
+
+    /* Changes layout to 1 column on mobile */
     grid-template-columns: 1fr;
   }
 
   .insights-hero h1 {
+
+    /* Smaller heading for mobile */
     font-size: 2rem;
+  }
+
+  .insights-section {
+
+    /* Smaller padding on mobile */
+    padding: 2em 1em;
   }
 }

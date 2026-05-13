@@ -1,3 +1,5 @@
+/* HOWITWORKS.HTML - Ria Rajesh s5404819 */
+
 * {
   margin: 0;
   padding: 0;
@@ -154,14 +156,58 @@ transition: all 0.3s ease;
 
 .card {
   flex: 1;
-  border: 2px solid #222222; /* Charcoal */
+  border: 2px solid #222222;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #E8F5EE; /* Pale Sage inside box */
+  background-color: #E8F5EE;
   min-height: 550px;
 
+  position: relative;   /* IMPORTANT */
+  overflow: hidden;     /* IMPORTANT */
+  cursor: pointer;
+}
+/* OVERLAY */
+.card-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: left;
+
+  padding: 30px;
+
+  opacity: 0;
+
+  transition: 0.3s ease;
+}
+
+/* SHOW OVERLAY ON HOVER */
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* TEXT */
+.card-overlay h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.card-overlay p {
+  line-height: 1.6;
+  max-width: 400px;
 }
 
 .card-header {

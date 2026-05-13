@@ -373,204 +373,434 @@ margin: 20px 0;
 
 /* INSIGHTS PAGE - Brenda Powi */
 
-/* INSIGHTS HERO SECTION */
-/* This section introduces the page and explains the purpose of the Insights page. */
-
-.insights-hero {
-  background: #f5f5f5; /* Light grey background */
-  text-align: center; /* Center align text */
-  padding: 4em 2em; /* Space inside section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.insights-hero h1 {
-  color: #003b63; /* Dark blue heading */
-  font-size: 2.8rem; /* Large heading size */
-  margin-bottom: 0.4em; /* Space below heading */
-}
+body {
+  font-family: Arial, Helvetica, sans-serif;
 
-.insights-hero p {
-  color: #333; /* Dark grey paragraph text */
-  font-size: 1.1rem;
-  max-width: 700px; /* Keeps text readable */
-  margin: 0 auto; /* Centers paragraph */
-  line-height: 1.5; /* Better readability */
+  background-color: #f4f6f4; /* Soft light grey background */
+
+  color: #2b2b2b; /* Dark readable text */
+
+  line-height: 1.6;
 }
 
 
-/* INSIGHTS MAIN SECTION */
-/* This section holds the smart energy tip cards. */
+/* NAVBAR */
 
-.insights-section {
-  padding: 3em 2.5em; /* Space around content */
-  background: #ffffff; /* White background */
+.navbar {
+  width: 100%;
+
+  padding: 1em 4em;
+
+  background-color: #ffffff; /* White navbar */
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
-.insights-section h2 {
-  text-align: center; /* Center heading */
-  color: #0D5C63; /* Dark teal heading */
-  font-size: 2rem;
-  margin-bottom: 1.5em;
+
+/* WEBSITE LOGO */
+
+.logo {
+  font-size: 1.6rem;
+
+  font-weight: bold;
+
+  color: #2E7D32; /* Eco green */
+
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style: none;
+
+  display: flex;
+
+  gap: 1.5em;
+}
+
+.navbar a {
+  text-decoration: none;
+
+  color: #222222; /* Charcoal text */
+
+  font-weight: bold;
+
+  font-size: 0.9rem;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: #2E7D32; /* Eco green hover */
 }
 
 
-/* GRID LAYOUT FOR CARDS */
-/* Grid layout was used so the cards can be organised clearly in rows and columns. */
+/* HERO / BANNER SECTION */
 
-.insights-grid {
+.hero-section {
   display: grid;
 
-  /* Creates 4 equal columns */
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
 
-  gap: 1.5em; /* Space between cards */
+  align-items: center;
+
+  gap: 3em;
+
+  padding: 4em 7%;
+
+  background-color: #dfe8e3; /* Soft sage banner */
 }
 
-
-/* INSIGHT CARD DESIGN */
-/* Each card presents one tip at a time to reduce cognitive load for the user. */
-
-.insight-card {
-  background: #E8F5EE; /* Pale sage green card background */
-
-  border: 2px solid #222222; /* Charcoal border */
-
-  border-radius: 10px; /* Rounded corners */
-
-  padding: 2em 1.2em; /* Space inside card */
-
-  text-align: center; /* Center text */
-
-  min-height: 260px; /* Keeps card sizes similar */
-
-  /* Flexbox for centering content inside each card */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  /* Shadow effect makes cards stand out */
-  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-
-  /* Smooth hover animation */
-  transition: transform 0.3s ease,
-              box-shadow 0.3s ease;
+.hero-text {
+  max-width: 560px;
 }
 
+.hero-tag {
+  display: inline-block;
 
-/* CARD HOVER ANIMATION */
-/* Hover effect gives visual feedback when users interact with cards. */
+  background-color: #d3e2d1; /* Light sage label */
 
-.insight-card:hover {
+  color: #456148; /* Dark green text */
 
-  /* Moves card slightly upward */
-  transform: translateY(-8px);
+  padding: 0.5em 1em;
 
-  /* Darker shadow on hover */
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
+  border-radius: 20px;
 
+  font-size: 0.85rem;
 
-/* ICON STYLING + ANIMATION */
-/* Icons make the tips easier to scan quickly. */
+  font-weight: bold;
 
-.insight-card .icon {
-
-  font-size: 2rem; /* Larger icon size */
-
-  margin-bottom: 0.6em; /* Space below icon */
-
-  /* Smooth icon animation */
-  transition: transform 0.3s ease;
-}
-
-
-/* Icon grows slightly on hover */
-
-.insight-card:hover .icon {
-  transform: scale(1.2);
-}
-
-
-/* CARD TEXT STYLING */
-/* Text styling keeps content simple and readable. */
-
-.insight-card h3 {
-  color: #0D5C63; /* Dark teal heading */
-  font-size: 1.25rem;
   margin-bottom: 1em;
 }
 
-.insight-card p {
-  color: #222222; /* Dark text */
-  line-height: 1.5;
+.hero-text h1 {
+  font-size: 3.5rem;
+
+  line-height: 1.1;
+
+  color: #084c57; /* Deep teal heading */
+
+  margin-bottom: 0.5em;
+}
+
+.hero-text p {
+  color: #444444; /* Dark grey paragraph */
+
+  margin-bottom: 1.5em;
+}
+
+.hero-button {
+  display: inline-block;
+
+  background-color: #2E7D32; /* Main green button */
+
+  color: white; /* White button text */
+
+  padding: 0.9em 1.5em;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #256628; /* Darker green hover */
+
+  transform: translateY(-3px);
+}
+
+.hero-image {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+
+  max-width: 520px;
+
+  object-fit: contain;
 }
 
 
-/* WHY THIS MATTERS SECTION */
-/* This section explains how the page connects to the project problem statement. */
+/* SMART TIPS SECTION */
 
-.insights-info {
-
-  background: #E8F5EE; /* Pale sage background */
-
-  border: 2px solid #222222; /* Charcoal border */
-
-  border-radius: 10px; /* Rounded corners */
-
-  max-width: 800px; /* Limits width */
-
-  margin: 1.5em auto 2em; /* Centers section */
-
-  padding: 1.5em; /* Inner spacing */
-
-  text-align: center; /* Center text */
+.smart-tips-heading {
+  padding: 3em 7% 1em;
 }
 
-.insights-info h2 {
-  color: #0D5C63; /* Dark teal heading */
-  margin-bottom: 0.7em;
+.smart-tips-heading h2 {
+  font-size: 2.5rem;
+
+  color: #084c57; /* Deep teal heading */
+
+  margin-bottom: 0.3em;
 }
 
-.insights-info p {
-  line-height: 1.6;
-  color: #222222; /* Dark paragraph text */
+.smart-tips-heading p {
+  color: #555555; /* Medium grey text */
 }
 
+
+/* FILTER BUTTONS */
+
+.filter-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 1em;
+
+  padding: 1em 7% 2em;
+}
+
+.filter-buttons button {
+  border: 1px solid #d6dddd; /* Light grey border */
+
+  background-color: #ffffff; /* White button */
+
+  color: #333333; /* Dark text */
+
+  padding: 0.7em 1.2em;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons button:hover,
+.active-filter {
+  background-color: #084c57; /* Teal active button */
+
+  color: white;
+}
+
+
+/* TIP CARDS GRID */
+
+.tips-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1.8em;
+
+  padding: 0 4em 4em 4em;
+}
+
+
+/* TIP CARDS */
+
+.tip-card {
+  background-color: #ffffff; /* Pure white cards */
+
+  border: 1px solid #d2dcd5; /* Soft sage border */
+
+  border-radius: 18px;
+
+  padding: 2em;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+
+/* ICON CIRCLE */
+
+.icon-circle {
+  width: 72px;
+
+  height: 72px;
+
+  background-color: #cfe3d6; /* Stronger sage green */
+
+  border: 2px solid #aac5b5; /* Darker sage border */
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-bottom: 1em;
+}
+
+.icon-circle img {
+  width: 42px;
+
+  height: 42px;
+
+  object-fit: contain;
+
+  opacity: 1; /* Makes images fully visible */
+}
+
+
+/* CARD TEXT */
+
+.tip-card h2 {
+  color: #084c57; /* Deep teal headings */
+
+  font-size: 1.2rem;
+
+  margin-bottom: 0.6em;
+}
+
+.tip-card p {
+  color: #444444; /* Dark readable text */
+
+  line-height: 1.7;
+
+  margin-bottom: 1em;
+}
+
+.tip-card span {
+  display: inline-block;
+
+  background-color: #e4f2e2; /* Soft green tag */
+
+  color: #2E7D32; /* Green text */
+
+  padding: 0.4em 0.8em;
+
+  border-radius: 15px;
+
+  font-size: 0.8rem;
+
+  font-weight: bold;
+}
+
+
+/* CTA SECTION */
+
+.cta-section {
+  margin: 0 7% 4em;
+
+  padding: 2.5em;
+
+  background-color: #dfe8e3; /* Soft sage footer */
+
+  border-radius: 18px;
+
+  text-align: center;
+}
+
+.cta-text h2 {
+  color: #084c57; /* Deep teal heading */
+
+  margin-bottom: 0.3em;
+
+  font-size: 2rem;
+}
+
+.cta-text p {
+  color: #444444; /* Dark grey paragraph */
+
+  font-size: 1.05rem;
+}
 
 /* RESPONSIVE DESIGN */
-/* Media queries from Workshop 8 are used so the page works on tablet and mobile screens. */
 
+@media (max-width: 1200px) {
 
-/* Tablet */
+  .tips-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
 
 @media (max-width: 900px) {
 
-  .insights-grid {
+  .hero-section {
+    grid-template-columns: 1fr;
 
-    /* Changes layout to 2 columns on tablets */
+    text-align: center;
+  }
+
+  .hero-text {
+    margin: auto;
+  }
+
+  .tips-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .smart-tips-heading {
+    text-align: center;
+  }
+
+  .cta-section {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
 }
-
-
-/* Mobile */
 
 @media (max-width: 600px) {
 
-  .insights-grid {
+  .navbar {
+    flex-direction: column;
 
-    /* Changes layout to 1 column on mobile */
+    gap: 1em;
+
+    padding: 1em;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .hero-section {
+    padding: 3em 5%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .tips-grid {
     grid-template-columns: 1fr;
+
+    padding: 0 1.5em 2em 1.5em;
   }
 
-  .insights-hero h1 {
-
-    /* Smaller heading for mobile */
-    font-size: 2rem;
+  .smart-tips-heading {
+    padding: 2em 5% 1em;
   }
 
-  .insights-section {
-
-    /* Smaller padding on mobile */
-    padding: 2em 1em;
-  }
 }

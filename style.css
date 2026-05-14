@@ -984,3 +984,13 @@ textarea {
         flex-direction: column;
     }
 }
+
+/* This should be the last thing, write your code above this */
+.home-footer {
+  background-color: #222222; /* Charcoal */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 40px;
+  font-size: 0.875rem;
+}
+ 

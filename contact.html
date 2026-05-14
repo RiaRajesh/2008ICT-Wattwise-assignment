@@ -2,130 +2,136 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Contact Us</title>
-	<link rel="stylesheet" href="style.css">
-
-	<style>
-		.contact-wrapper {
-			padding: 40px;
-			display: flex;
-			justify-content: center;
-		}
-
-		.contact-box {
-			width: 800px;
-			background: #E8F5EE;
-			border: 2px solid #222;
-			padding: 30px;
-		}
-
-		.contact-title {
-			text-align: center;
-			font-size: 32px;
-			margin-bottom: 30px;
-			color: #0D5C63;
-		}
-
-		.contact-content {
-			display: flex;
-			gap: 40px;
-		}
-
-		/* LEFT SIDE FORM */
-		.contact-form {
-			flex: 1;
-		}
-
-		.contact-form label {
-			display: block;
-			margin-top: 15px;
-			font-weight: bold;
-		}
-
-		.contact-form input {
-			width: 100%;
-			border: none;
-			border-bottom: 2px solid #222;
-			background: transparent;
-			padding: 5px;
-		}
-
-		.contact-form button {
-			margin-top: 20px;
-			padding: 10px 20px;
-			border: 2px solid #222;
-			background: white;
-			border-radius: 20px;
-			cursor: pointer;
-		}
-
-		/* RIGHT SIDE INFO */
-		.contact-info {
-			flex: 1;
-			display: flex;
-			flex-direction: column;
-			gap: 15px;
-		}
-
-		.info-box {
-			border: 2px solid #222;
-			padding: 10px;
-			background: white;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-	<!-- NAVBAR -->
-	<!-- ADD YOUR LINKS HERE -->
-	<nav class="navbar">
-		<div class="logo">LOGO</div>
-		<ul>
-			<li><a href="#">Homepage</a></li>
-			<li><a href="insights.html">Insights</a></li>
-			<li><a href="HowItWorks.html">How it works</a></li>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="contact.html">contact us</a></li>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+        <ul>
+            <li><a href="#">Homepage</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="HowItWorks.html">How it works</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
+    <!-- CONTACT FORM -->
+    <div class="contact-wrapper">
 
+        <div class="contact-box">
 
-		</ul>
-	</nav>
+            <!-- KEEPING THE HEADING -->
+            <h2 class="contact-title">Contact Us</h2>
 
-	<div class="contact-wrapper">
+            <!-- FORM START -->
+            <form action="successfulSub.html">
 
-		<div class="contact-box">
+                <!-- PERSONAL DETAILS -->
+                <div class="section-title">Personal Details</div>
 
-			<h2 class="contact-title">Contact Us</h2>
+                <div class="form-row">
 
-			<div class="contact-content">
+                    <div class="input-group">
+                        <label>Full Name</label>
 
-				<!-- left side of page -->
-				<div class="contact-form">
-					<label>Full Name</label>
-					<input type="text">
+                        <input 
+                            type="text"
+                            placeholder="Your full name..."
+                            required>
+                    </div>
 
-					<label>Email</label>
-					<input type="email">
+                    <div class="input-group">
+                        <label>Email Address</label>
 
-					<label>Phone Number</label>
-					<input type="text">
+                        <input 
+                            type="email"
+                            placeholder="Your email address..."
+                            required>
+                    </div>
 
-					<button>Contact Us</button>
-				</div>
+                </div>
 
-				<!-- on the right side of the page -->
-				<div class="contact-info">
-					<div class="info-box">Building N79 - Engineering, Technology and Aviation</div>
-					<div class="info-box">(07) 3735 7111</div>
-					<div class="info-box">NA04@griffithuni.edu.au</div>
-				</div>
+                <div class="form-row">
 
-			</div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
 
-		</div>
+                        <input 
+                            type="text"
+                            placeholder="Your phone number..."
+                            required>
+                    </div>
+
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="input-group">
+
+                    <label>Your Message</label>
+
+                    <textarea 
+                        placeholder="Type your message..."
+                        required></textarea>
+
+                </div>
+
+                <!-- CHECKBOXES -->
+                <div class="checkbox-section">
+
+                    <div class="checkbox-title">Need help in</div>
+
+                    <div class="checkbox-grid">
+
+                        <label>
+                            <input type="checkbox">
+                            General Inquiry
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Technical Support
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Bug Report
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Feature Request
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Other
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- BUTTON -->
+                <button class="submit-btn" type="submit">
+                    Submit message
+                </button>
+
+            </form>
+            <!-- FORM END -->
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
 
 	</div>
 

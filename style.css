@@ -994,3 +994,351 @@ textarea {
   font-size: 0.875rem;
 }
  
+/* homepage===========================================================
+============================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #FFFFFF; /* White */
+  color: #222222;            /* Charcoal */
+}
+
+/* ============================================================
+   NAVBAR
+   CSS Layout
+   Flexbox spaces the logo and nav links across the bar.
+============================================================ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #0D5C63; /* Deep Teal */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul a:hover {
+  color: #1A7A4A; /* Forest Green */
+}
+
+/* ============================================================
+   HERO SECTION
+   CSS Layout
+   Flexbox places headline text on the left and card on the right.
+============================================================ */
+.home-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 50px;
+  background-color: #0D5C63; /* Deep Teal */
+  color: #FFFFFF;
+}
+
+/* LEFT SIDE: headline and CTA */
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+/* CTA BUTTON */
+.hero-btn {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #222222;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 25px;
+  border: 2px solid #222222;
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #F4A228; /* Amber */
+}
+
+/* RIGHT SIDE: snapshot card */
+.hero-card {
+  flex: 1;
+  background-color: #E8F5EE; /* Pale Sage */
+  border: 2px solid #222222;
+  padding: 25px;
+  color: #222222;
+}
+
+.hero-card h3 {
+  font-size: 1rem;
+  color: #0D5C63;
+  margin-bottom: 15px;
+}
+
+.snapshot-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #222222;
+  font-size: 0.95rem;
+}
+
+.snapshot-row:last-child {
+  border-bottom: none;
+}
+
+.snapshot-value {
+  font-weight: bold;
+  color: #1A7A4A; /* Forest Green */
+}
+
+/* Alert pill - Amber used for alerts, never red */
+.alert-pill {
+  background-color: #F4A228;
+  color: #222222;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 3px 12px;
+  border-radius: 999px;
+  border: 2px solid #222222;
+}
+
+/* ============================================================
+   FEATURE CARDS SECTION
+   CSS Grid Layout
+   Three equal columns display the key features of WattWise.
+============================================================ */
+.home-features {
+  padding: 60px 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.home-features h2 {
+  font-size: 1.9rem;
+  color: #0D5C63; /* Deep Teal */
+  margin-bottom: 40px;
+}
+
+/* CSS Grid - 3 equal columns */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background-color: #E8F5EE; /* Pale Sage */
+  border: 2px solid #222222;
+  padding: 30px 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.15);
+}
+
+.feature-card h3 {
+  color: #0D5C63;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #222222;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ============================================================
+   OFF PEAK AND ON PEAK SECTION
+   CSS Layout
+   Flexbox places descriptive text left and time bands right.
+============================================================ */
+.home-peak {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 50px;
+  background-color: #0D5C63; /* Deep Teal */
+  color: #FFFFFF;
+}
+
+.peak-text {
+  flex: 1;
+}
+
+.peak-text h2 {
+  font-size: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.peak-text p {
+  font-size: 1rem;
+  color: #FFFFFF;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.peak-text strong {
+  color: #F4A228; /* Amber highlights the saving amount */
+}
+
+/* Time band visual - acts as the clock image from the wireframe */
+.peak-clock {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.time-band {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border: 2px solid #222222;
+}
+
+.time-band.off-peak,
+.time-band.shoulder {
+  background-color: #E8F5EE; /* Pale Sage */
+  color: #222222;
+}
+
+.time-band.peak {
+  background-color: #F4A228; /* Amber for peak warning */
+  color: #222222;
+}
+
+.band-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.green-dot { background-color: #1A7A4A; } /* Forest Green */
+.amber-dot { background-color: #222222; }
+
+.band-name {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.band-hours {
+  font-size: 0.9rem;
+}
+
+.band-rate {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.home-footer {
+  background-color: #222222; /* Charcoal */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 40px;
+  font-size: 0.875rem;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   Responsive Design
+   Media queries so the layout works on tablet and mobile.
+============================================================ */
+
+/* Tablet */
+@media (max-width: 900px) {
+
+  .home-hero {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .home-peak {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    padding: 15px 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-features {
+    padding: 40px 20px;
+  }
+
+  .home-features h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar ul {
+    gap: 12px;
+  }

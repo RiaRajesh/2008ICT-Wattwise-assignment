@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WattWise - Homepage</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
- 
+
   <!--
     HOMEPAGE - index.html
     This is the main landing page for WattWise.
     It introduces the website, shows key features, and explains peak/off-peak hours.
   -->
- 
+
   <!-- NAVBAR -->
   <!-- The navigation bar links this page to the other website pages so users can move around easily. -->
   <nav class="navbar">
@@ -21,17 +23,17 @@
     <ul>
       <li><a href="index.html">Homepage</a></li>
       <li><a href="insights.html">Insights</a></li>
-      <li><a href="HowItWorks.html">How it works</a></li>
+      <li><a href="HowItWorks.html">Demo</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
- 
+
   <!-- HERO SECTION -->
   <!-- This section introduces the website with a headline and call-to-action button. -->
   <!-- It uses flexbox to place the text on the left and the snapshot card on the right. -->
   <section class="home-hero">
- 
+
     <!-- LEFT SIDE: Headline and CTA -->
     <!-- The headline tells visitors what WattWise does straight away. -->
     <div class="hero-text">
@@ -40,7 +42,7 @@
       <p>WattWise helps Australian households track usage, understand peak times, and cut costs in plain English.</p>
       <a href="contact.html" class="hero-btn">Contact Us Now</a>
     </div>
- 
+
     <!-- RIGHT SIDE: Snapshot card -->
     <!-- Shows a quick preview of the dashboard to grab user attention. -->
     <div class="hero-card">
@@ -62,17 +64,17 @@
         <span class="alert-pill">Peak Hours</span>
       </div>
     </div>
- 
+
   </section>
- 
+
   <!-- FEATURE CARDS SECTION -->
   <!-- Three cards highlight the main features of WattWise. -->
   <!-- CSS Grid is used to organise the cards in equal columns. -->
   <section class="home-features">
     <h2>Everything you need to manage energy smarter</h2>
- 
+
     <div class="features-grid">
- 
+
       <!-- FEATURE CARD 1 -->
       <!-- This card explains the energy tracking feature. -->
       <div class="feature-card">
@@ -80,15 +82,16 @@
         <h3>Track Usage</h3>
         <p>See your daily and weekly energy consumption in clear simple charts. Know which appliances cost the most.</p>
       </div>
- 
+
       <!-- FEATURE CARD 2 -->
       <!-- This card explains the personalised tips feature. -->
       <div class="feature-card">
         <div class="feature-icon">💡</div>
         <h3>Get Insights</h3>
-        <p>Personalised energy-saving tips based on your actual usage. Practical renter-friendly advice that makes a real difference.</p>
+        <p>Personalised energy-saving tips based on your actual usage. Practical renter-friendly advice that makes a
+          real difference.</p>
       </div>
- 
+
       <!-- FEATURE CARD 3 -->
       <!-- This card explains the smart alerts feature. -->
       <div class="feature-card">
@@ -96,56 +99,58 @@
         <h3>Alerts</h3>
         <p>Get notified when your usage spikes or peak hours begin so you can shift habits and save money.</p>
       </div>
- 
+
     </div>
   </section>
- 
+
   <!-- OFF PEAK AND ON PEAK HOURS SECTION -->
   <!-- This section explains time-of-use energy pricing in a simple visual way. -->
   <!-- Flexbox places the text on the left and the time bands on the right. -->
   <section class="home-peak">
- 
+
     <!-- LEFT SIDE: Descriptive text -->
     <div class="peak-text">
       <h2>Off Peak &amp; On Peak Hours</h2>
       <!-- Descriptive text explains the concept. -->
-      <p>Most energy plans charge different rates at different times of the day. WattWise shows you exactly when to run the dishwasher, washing machine or dryer so you never pay more than you need to.</p>
+      <p>Most energy plans charge different rates at different times of the day. WattWise shows you exactly when to run
+        the dishwasher, washing machine or dryer so you never pay more than you need to.</p>
       <p>Shifting tasks to off-peak hours can save a household <strong>$150 to $300 per year</strong>.</p>
       <a href="HowItWorks.html" class="hero-btn">See How It Works</a>
     </div>
- 
+
     <!-- RIGHT SIDE: Clock image / time band visual -->
     <!-- This acts as the clock image from the wireframe to show time-of-use pricing. -->
     <div class="peak-clock">
- 
+
       <div class="time-band off-peak">
         <span class="band-dot green-dot"></span>
         <span class="band-name">Off-Peak</span>
         <span class="band-hours">10 pm - 7 am</span>
         <span class="band-rate">18c / kWh</span>
       </div>
- 
+
       <div class="time-band shoulder">
         <span class="band-dot green-dot"></span>
         <span class="band-name">Shoulder</span>
         <span class="band-hours">7 am - 4 pm</span>
         <span class="band-rate">22c / kWh</span>
       </div>
- 
+
       <div class="time-band peak">
         <span class="band-dot amber-dot"></span>
         <span class="band-name">Peak - avoid heavy use</span>
         <span class="band-hours">4 pm - 10 pm</span>
         <span class="band-rate">52c / kWh</span>
       </div>
- 
+
     </div>
   </section>
- 
+
   <!-- FOOTER -->
   <footer class="home-footer">
     <p>&copy; 2026 WattWise - 2008ICT Design Thinking in IT | Griffith University, Queensland, Australia</p>
   </footer>
- 
+
 </body>
+
 </html>

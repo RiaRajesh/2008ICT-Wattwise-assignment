@@ -13,35 +13,6 @@ body {
 
 }
 
-/* NAVBAR */
-.navbar {
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color: #0D5C63; /* Deep teal */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.navbar .logo {
-  color: #FFFFFF;
-}
-
-.navbar ul {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
-
-.navbar li {
-  color: #FFFFFF;
-  cursor: pointer;
-}
-
-.navbar li:hover {
-  color: #1A7A4A; /* Forest Green for active navigation */
-}
 
 /* DESCRIPTION */
 .description {
@@ -127,7 +98,8 @@ font-size: 1.2rem;
 transition: all 0.3s ease;
 
 }
-.card:hover {
+.card:hover,
+.panel:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
@@ -149,13 +121,17 @@ transition: all 0.3s ease;
 /* DASHBOARD */
 .dashboard {
   display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
   gap: 30px;
   padding: 20px 40px;
   background-color: #FFFFFF; /* keep space around cards white */
 }
 
-.card {
+.card,
+.panel {
   flex: 1;
+  min-width: 280px;
   border: 2px solid #222222;
   padding: 20px;
   display: flex;
@@ -164,8 +140,8 @@ transition: all 0.3s ease;
   background-color: #E8F5EE;
   min-height: 550px;
 
-  position: relative;   /* IMPORTANT */
-  overflow: hidden;     /* IMPORTANT */
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
 }
 /* OVERLAY */
@@ -195,7 +171,8 @@ transition: all 0.3s ease;
 }
 
 /* SHOW OVERLAY ON HOVER */
-.card:hover .card-overlay {
+.card:hover .card-overlay,
+.panel:hover .card-overlay {
   opacity: 1;
 }
 
@@ -203,11 +180,13 @@ transition: all 0.3s ease;
 .card-overlay h3 {
   font-size: 2rem;
   margin-bottom: 15px;
+  color: #ffd700;
 }
 
 .card-overlay p {
   line-height: 1.6;
   max-width: 400px;
+  color: #ffffff;
 }
 
 .card-header {
@@ -382,31 +361,17 @@ margin: 20px 0;
 body {
   font-family: Arial, Helvetica, sans-serif;
 
-  background-color: #f4f6f4; /* Soft light grey background */
-
-  color: #2b2b2b; /* Dark readable text */
+  background-color: #515451; /* Soft light grey background */
 
   line-height: 1.6;
 }
 
+.hero-text.insights-page-text h1,
+.hero-text.insights-page-text p {
+  color:black;
 
-/* NAVBAR */
-
-.navbar {
-  width: 100%;
-
-  padding: 1em 4em;
-
-  background-color: #ffffff; /* White navbar */
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
+
 
 
 /* WEBSITE LOGO */
@@ -421,28 +386,6 @@ body {
   letter-spacing: 1px;
 }
 
-.navbar ul {
-  list-style: none;
-
-  display: flex;
-
-  gap: 1.5em;
-}
-
-.navbar a {
-  text-decoration: none;
-
-  color: #222222; /* Charcoal text */
-
-  font-weight: bold;
-
-  font-size: 0.9rem;
-}
-
-.navbar a:hover,
-.navbar .active {
-  color: #2E7D32; /* Eco green hover */
-}
 
 
 /* HERO / BANNER SECTION */
@@ -1011,7 +954,7 @@ body {
 /* ============================================================
    NAVBAR
    CSS Layout
-   Flexbox spaces the logo and nav links across the bar.
+   Flexbox spaces the logo and nav links across the bar for all screens.
 ============================================================ */
 .navbar {
   display: flex;
@@ -1230,8 +1173,14 @@ body {
   margin-bottom: 15px;
 }
 
-.peak-text strong {
-  color: #F4A228; /* Amber highlights the saving amount */
+.highlight {
+  color: #F5A623; /* yellow/orange */
+  font-weight: bold;
+}
+
+.peak-text .tagline {
+  color: #C7F3FF;
+  font-weight: bold;
 }
 
 /* Time band visual - acts as the clock image from the wireframe */

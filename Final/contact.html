@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">WattWise</div>
+        <ul>
+            <li><a href="homepage.html">Homepage</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="HowItWorks.html">Demo</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-wrapper">
+
+        <div class="contact-box">
+
+            <!-- KEEPING THE HEADING -->
+            <h2 class="contact-title">Contact Us</h2>
+
+            <!-- FORM START -->
+            <form action="successfulSub.html">
+
+                <!-- PERSONAL DETAILS -->
+                <div class="section-title">Personal Details</div>
+
+                <div class="form-row">
+
+                    <div class="input-group">
+                        <label>Full Name*</label>
+
+                        <input type="text" placeholder="Your full name..." required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address*</label>
+
+                        <input type="email" placeholder="Your email address..." required>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="input-group">
+                        <label>Phone Number*</label>
+
+                        <input type="text" placeholder="Your phone number..." required>
+                    </div>
+
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="input-group">
+
+                    <label>Your Message*</label>
+
+                    <textarea placeholder="Type your message..." required></textarea>
+
+                </div>
+
+                <!-- CHECKBOXES -->
+                <div class="checkbox-section">
+
+                    <div class="checkbox-title">Need help in</div>
+
+                    <div class="checkbox-grid">
+
+                        <label>
+                            <input type="checkbox">
+                            General Inquiry
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Technical Support
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Bug Report
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Feature Request
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Other
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- BUTTON -->
+                <button class="submit-btn" type="submit">
+                    Submit message
+                </button>
+
+            </form>
+            <!-- FORM END -->
+
+        </div>
+
+    </div>
+
+<footer class="home-footer">
+    <p>&copy; 2026 WattWise - 2008ICT Design Thinking in IT | Griffith University, Queensland, Australia</p>
+</footer>
+
+</body>
+
+</html>

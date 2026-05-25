@@ -53,7 +53,7 @@ font-size: 1.2rem;
   margin-bottom: 10px; /* space below text */
 }
 
-/* SVG LINE ONLY wave header */
+/* SVG LINE wave header */
 .wave-header {
   overflow: hidden;
 }
@@ -180,7 +180,7 @@ transition: all 0.3s ease;
 .card-overlay h3 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #ffd700;
+  color: rgb(34, 181, 87);
 }
 
 .card-overlay p {
@@ -257,13 +257,14 @@ transition: all 0.3s ease;
   background-color: #E8F5EE;
   z-index: 1;
 }
-
+/*makes the circle a progression circle rather than a pie chart*/
 .circle-text {
   position: relative;
-  z-index: 2;
+  z-index: 2;/*stack level of the box*/
   text-align: center;
-  transform: rotate(90deg);
+  transform: rotate(90deg);/*the circle sits at a 90 degrees angle if not the circle initally sat at 180 degrees angle */
 }
+
 
 /* GRAPH */
 .graph-title {
@@ -287,7 +288,7 @@ transition: all 0.3s ease;
   object-fit: cover;
 }
 
-/* FEATURES */
+/* FEATURES keeps the boxes horizontal rather than vertical*/
 .features {
   display: flex;
   gap: 20px;
@@ -296,7 +297,7 @@ transition: all 0.3s ease;
 
 /* FIXED FEATURE BOX */
 .feature {
-  flex: 1;
+  flex: 1; /*keeps everything spaced out, rather than having it congested to the corner of the page */
   height: 300px;
   border: 2px solid #222222; /* Charcoal */
   display: flex;
@@ -304,7 +305,6 @@ transition: all 0.3s ease;
   align-items: center;
   justify-content: center;
   gap: 5px;
-  overflow: hidden;
   background-color: #E8F5EE; /* Pale Sage */
 }
 
@@ -326,7 +326,7 @@ transition: all 0.3s ease;
   color: #0D5C63; /* Deep Teal */
 }
 
-.card-footer {
+.card-footer { /*text under the card is centered*/
   display: flex;
   justify-content: center;   /* centers horizontally */
   align-items: center;       /* aligns vertically */
@@ -1174,7 +1174,7 @@ body {
 }
 
 .highlight {
-  color: #F5A623; /* yellow/orange */
+  color: rgb(17, 165, 78);
   font-weight: bold;
 }
 
